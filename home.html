@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomeh</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/0bccaac46f.js" crossorigin="anonymous"></script>
+</head>
+
+<!--Menu-->
+<body>
+    <header>
+        <div class="container">
+            <img src="img/logo.png" class="logo" width="175">
+            <nav>
+                <a href="">Home</a>
+                <a href="">Projetos</a>
+                <a href="">Sobre Nós</a>
+                <a href="index.html" class="botao">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--Adicionar projeto-->
+    <main class="container-tabela">
+        <div class="fundo">
+            <div class="container-form">
+                <form action="">
+                    
+                    <label id="etiqueta"for="nome">Nome do Projeto</label>
+                    <input required type="text" name="nome" id="nome" placeholder="Digite o nome do projeto">
+
+                    <label for="date">Data de Início</label>
+                    <input required type="date" name="datei" id="datei" placeholder="Data de Início">
+
+                    <label for="date">Data de Fim</label>
+                    <input required type="date" name="datef" id="datef" placeholder="Data de Fim">
+
+                    <input class="cdt-botao" type="button" value="Cadastrar" >
+                    
+                    
+                </form>
+
+    <!--tabela de projetos-->
+    <div id="dGridProjetos" class="projetos table-responsive-md">
+                
+                <table id="tbProjetos" class="table table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">ID Projeto</th>
+                            <th scope="col">Nome Projeto</th>
+                            <th scope="col">Data Início</th>
+                            <th scope="col">Data Fim</th>
+                            <th scope="col">Completo</th>
+                            <th scope="col">Atrasado</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Projeto 1</td>
+                            <td>12/02/2020</td>
+                            <td>12/05/2020</td>
+                            <td>Não</td>
+                            <td>-</td>
+                            <td><a href="projeto1.html"><i class="fas fa-search pesquisa"></i></a></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Projeto 2</td>
+                            <td>15/03/2020</td>
+                            <td>01/10/2020</td>
+                            <td>Não</td>
+                            <td>-</td>
+                            <td><a href="projeto2.html"><i class="fas fa-search pesquisa"></i></a></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Projeto 3</td>
+                            <td>22/09/2020</td>
+                            <td>15/04/2021</td>
+                            <td>Sim</td>
+                            <td>2 meses</td>
+                            <td><a href="projeto3.html"><i class="fas fa-search pesquisa"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+            </div>
+    <div class="container-botoes">
+        <!--<button>Gerar Estatisticas</button>-->
+        <button type="button" class="botao"
+         onclick="altProjetos(nome.value, datei.value, datef.value)">Editar</button>
+        <button type="button" class="botao" >Excluir</button>
+    </div>
+        </div>
+    </div>
+    </main>
+
+     <!--Javascript-->
+        <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

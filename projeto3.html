@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomeh</title>
+
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/projeto1.css">
+    
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/0bccaac46f.js" crossorigin="anonymous"></script>
+
+    <script src="js/jquery-1.7.2.min.js" defer></script>
+    <script src="js/projeto1.js"></script>
+</head>
+
+<!--Menu-->
+<body>
+    <header>
+        <div class="container">
+            <img src="img/logo.png" class="logo" width="175">
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="">Projetos</a>
+                <a href="">Sobre Nós</a>
+                <a href="index.html" class="botao">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--Adicionar projeto-->
+    <main class="container-tabela">
+        <div class="fundo">
+            <div class="container-form">
+                <form action="">
+                    
+                    <label id="etiqueta"for="nome">Nome da Atividade</label>
+                    <input required type="text" name="nome" id="nome" placeholder="Digite o nome da atividade">
+    
+                    <label for="date">Data de Início</label>
+                    <input required type="date" name="datei" id="datei" placeholder="Data de Início">
+    
+                    <label for="date">Data de Fim</label>
+                    <input required type="date" name="datef" id="datef" placeholder="Data de Fim">
+    
+                    <input class="cdt-botao" type="button" value="Cadastrar" >
+                    
+                    
+                </form>
+                    <h3 class="titulo-projeto"> Projeto 3</h3>
+                    
+                    <!--Barra de progresso atividades-->
+                <progress id='progress' max="100" value="75"></progress>
+    
+    <!--tabela de projetos-->
+    <div id="dGridProjetos" class="projetos table-responsive-md">
+                
+                <table id="tbProjetos" class="table table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">ID Atividade</th>
+                            <th scope="col">Nome Atividade</th>
+                            <th scope="col">Data Início</th>
+                            <th scope="col">Data Fim</th>
+                            <th scope="col">Finalizada?</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Atividade 1</td>
+                            <td>29/09/2020</td>
+                            <td>02/10/2020</td>
+                            <td><input class='progress' type="checkbox" checked></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Atividade 2</td>
+                            <td>05/10/2020</td>
+                            <td>01/11/2020</td>
+                            <td><input class='progress' type="checkbox" checked></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Atividade 3 </td>
+                            <td>10/11/2020</td>
+                            <td>02/02/2021</td>
+                            <td><input class='progress' type="checkbox" checked></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Atividade 4 </td>
+                            <td>15/02/2021</td>
+                            <td>15/04/2021</td>
+                            <td><input class='progress' type="checkbox" ></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                </table>
+                <hr>
+            </div>
+    <div class="container-botoes">
+        <!--<button>Gerar Estatisticas</button>-->
+        <a href="home.html" class="botao">Voltar</a>
+    </div>
+        </div>
+    </div>
+    </main>
+
+</body>
+</html>
